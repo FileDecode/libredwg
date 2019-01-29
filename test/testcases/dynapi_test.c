@@ -9424,49 +9424,49 @@ static int test_DIMENSION_ALIGNED (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC flip_arrow1;
+    BITCODE_B flip_arrow1;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "flip_arrow1", &flip_arrow1, NULL) &&
         flip_arrow1 == dimension_aligned->flip_arrow1)
       {
-        pass ("DIMENSION_ALIGNED.flip_arrow1 [RC] %u", flip_arrow1);
+        pass ("DIMENSION_ALIGNED.flip_arrow1 [B] " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ALIGNED.flip_arrow1 [RC] %u != %u", dimension_aligned->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ALIGNED.flip_arrow1 [B] " FORMAT_B " != " FORMAT_B "", dimension_aligned->flip_arrow1, flip_arrow1); error++;
       }
     flip_arrow1++;
     if (dwg_dynapi_entity_set_value(dimension_aligned, "DIMENSION_ALIGNED", "flip_arrow1", &flip_arrow1) &&
         flip_arrow1 == dimension_aligned->flip_arrow1)
       {
-        pass ("DIMENSION_ALIGNED.flip_arrow1 [RC] set+1 %u", flip_arrow1);
+        pass ("DIMENSION_ALIGNED.flip_arrow1 [B] set+1 " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ALIGNED.flip_arrow1 [RC] set+1 %u != %u", dimension_aligned->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ALIGNED.flip_arrow1 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_aligned->flip_arrow1, flip_arrow1); error++;
       }
     dimension_aligned->flip_arrow1--;
 
   }
   {
-    BITCODE_RC flip_arrow2;
+    BITCODE_B flip_arrow2;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "flip_arrow2", &flip_arrow2, NULL) &&
         flip_arrow2 == dimension_aligned->flip_arrow2)
       {
-        pass ("DIMENSION_ALIGNED.flip_arrow2 [RC] %u", flip_arrow2);
+        pass ("DIMENSION_ALIGNED.flip_arrow2 [B] " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ALIGNED.flip_arrow2 [RC] %u != %u", dimension_aligned->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ALIGNED.flip_arrow2 [B] " FORMAT_B " != " FORMAT_B "", dimension_aligned->flip_arrow2, flip_arrow2); error++;
       }
     flip_arrow2++;
     if (dwg_dynapi_entity_set_value(dimension_aligned, "DIMENSION_ALIGNED", "flip_arrow2", &flip_arrow2) &&
         flip_arrow2 == dimension_aligned->flip_arrow2)
       {
-        pass ("DIMENSION_ALIGNED.flip_arrow2 [RC] set+1 %u", flip_arrow2);
+        pass ("DIMENSION_ALIGNED.flip_arrow2 [B] set+1 " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ALIGNED.flip_arrow2 [RC] set+1 %u != %u", dimension_aligned->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ALIGNED.flip_arrow2 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_aligned->flip_arrow2, flip_arrow2); error++;
       }
     dimension_aligned->flip_arrow2--;
 
@@ -9628,25 +9628,25 @@ static int test_DIMENSION_ALIGNED (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(dimension_aligned, "DIMENSION_ALIGNED", "unknown", &unknown, NULL) &&
         unknown == dimension_aligned->unknown)
       {
-        pass ("DIMENSION_ALIGNED.unknown [RC] %u", unknown);
+        pass ("DIMENSION_ALIGNED.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ALIGNED.unknown [RC] %u != %u", dimension_aligned->unknown, unknown); error++;
+        fail ("DIMENSION_ALIGNED.unknown [B] " FORMAT_B " != " FORMAT_B "", dimension_aligned->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(dimension_aligned, "DIMENSION_ALIGNED", "unknown", &unknown) &&
         unknown == dimension_aligned->unknown)
       {
-        pass ("DIMENSION_ALIGNED.unknown [RC] set+1 %u", unknown);
+        pass ("DIMENSION_ALIGNED.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ALIGNED.unknown [RC] set+1 %u != %u", dimension_aligned->unknown, unknown); error++;
+        fail ("DIMENSION_ALIGNED.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_aligned->unknown, unknown); error++;
       }
     dimension_aligned->unknown--;
 
@@ -9935,49 +9935,49 @@ static int test_DIMENSION_ANG2LN (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC flip_arrow1;
+    BITCODE_B flip_arrow1;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "flip_arrow1", &flip_arrow1, NULL) &&
         flip_arrow1 == dimension_ang2ln->flip_arrow1)
       {
-        pass ("DIMENSION_ANG2LN.flip_arrow1 [RC] %u", flip_arrow1);
+        pass ("DIMENSION_ANG2LN.flip_arrow1 [B] " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ANG2LN.flip_arrow1 [RC] %u != %u", dimension_ang2ln->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ANG2LN.flip_arrow1 [B] " FORMAT_B " != " FORMAT_B "", dimension_ang2ln->flip_arrow1, flip_arrow1); error++;
       }
     flip_arrow1++;
     if (dwg_dynapi_entity_set_value(dimension_ang2ln, "DIMENSION_ANG2LN", "flip_arrow1", &flip_arrow1) &&
         flip_arrow1 == dimension_ang2ln->flip_arrow1)
       {
-        pass ("DIMENSION_ANG2LN.flip_arrow1 [RC] set+1 %u", flip_arrow1);
+        pass ("DIMENSION_ANG2LN.flip_arrow1 [B] set+1 " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ANG2LN.flip_arrow1 [RC] set+1 %u != %u", dimension_ang2ln->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ANG2LN.flip_arrow1 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ang2ln->flip_arrow1, flip_arrow1); error++;
       }
     dimension_ang2ln->flip_arrow1--;
 
   }
   {
-    BITCODE_RC flip_arrow2;
+    BITCODE_B flip_arrow2;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "flip_arrow2", &flip_arrow2, NULL) &&
         flip_arrow2 == dimension_ang2ln->flip_arrow2)
       {
-        pass ("DIMENSION_ANG2LN.flip_arrow2 [RC] %u", flip_arrow2);
+        pass ("DIMENSION_ANG2LN.flip_arrow2 [B] " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ANG2LN.flip_arrow2 [RC] %u != %u", dimension_ang2ln->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ANG2LN.flip_arrow2 [B] " FORMAT_B " != " FORMAT_B "", dimension_ang2ln->flip_arrow2, flip_arrow2); error++;
       }
     flip_arrow2++;
     if (dwg_dynapi_entity_set_value(dimension_ang2ln, "DIMENSION_ANG2LN", "flip_arrow2", &flip_arrow2) &&
         flip_arrow2 == dimension_ang2ln->flip_arrow2)
       {
-        pass ("DIMENSION_ANG2LN.flip_arrow2 [RC] set+1 %u", flip_arrow2);
+        pass ("DIMENSION_ANG2LN.flip_arrow2 [B] set+1 " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ANG2LN.flip_arrow2 [RC] set+1 %u != %u", dimension_ang2ln->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ANG2LN.flip_arrow2 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ang2ln->flip_arrow2, flip_arrow2); error++;
       }
     dimension_ang2ln->flip_arrow2--;
 
@@ -10139,25 +10139,25 @@ static int test_DIMENSION_ANG2LN (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(dimension_ang2ln, "DIMENSION_ANG2LN", "unknown", &unknown, NULL) &&
         unknown == dimension_ang2ln->unknown)
       {
-        pass ("DIMENSION_ANG2LN.unknown [RC] %u", unknown);
+        pass ("DIMENSION_ANG2LN.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ANG2LN.unknown [RC] %u != %u", dimension_ang2ln->unknown, unknown); error++;
+        fail ("DIMENSION_ANG2LN.unknown [B] " FORMAT_B " != " FORMAT_B "", dimension_ang2ln->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(dimension_ang2ln, "DIMENSION_ANG2LN", "unknown", &unknown) &&
         unknown == dimension_ang2ln->unknown)
       {
-        pass ("DIMENSION_ANG2LN.unknown [RC] set+1 %u", unknown);
+        pass ("DIMENSION_ANG2LN.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ANG2LN.unknown [RC] set+1 %u != %u", dimension_ang2ln->unknown, unknown); error++;
+        fail ("DIMENSION_ANG2LN.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ang2ln->unknown, unknown); error++;
       }
     dimension_ang2ln->unknown--;
 
@@ -10434,49 +10434,49 @@ static int test_DIMENSION_ANG3PT (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC flip_arrow1;
+    BITCODE_B flip_arrow1;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "flip_arrow1", &flip_arrow1, NULL) &&
         flip_arrow1 == dimension_ang3pt->flip_arrow1)
       {
-        pass ("DIMENSION_ANG3PT.flip_arrow1 [RC] %u", flip_arrow1);
+        pass ("DIMENSION_ANG3PT.flip_arrow1 [B] " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ANG3PT.flip_arrow1 [RC] %u != %u", dimension_ang3pt->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ANG3PT.flip_arrow1 [B] " FORMAT_B " != " FORMAT_B "", dimension_ang3pt->flip_arrow1, flip_arrow1); error++;
       }
     flip_arrow1++;
     if (dwg_dynapi_entity_set_value(dimension_ang3pt, "DIMENSION_ANG3PT", "flip_arrow1", &flip_arrow1) &&
         flip_arrow1 == dimension_ang3pt->flip_arrow1)
       {
-        pass ("DIMENSION_ANG3PT.flip_arrow1 [RC] set+1 %u", flip_arrow1);
+        pass ("DIMENSION_ANG3PT.flip_arrow1 [B] set+1 " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ANG3PT.flip_arrow1 [RC] set+1 %u != %u", dimension_ang3pt->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ANG3PT.flip_arrow1 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ang3pt->flip_arrow1, flip_arrow1); error++;
       }
     dimension_ang3pt->flip_arrow1--;
 
   }
   {
-    BITCODE_RC flip_arrow2;
+    BITCODE_B flip_arrow2;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "flip_arrow2", &flip_arrow2, NULL) &&
         flip_arrow2 == dimension_ang3pt->flip_arrow2)
       {
-        pass ("DIMENSION_ANG3PT.flip_arrow2 [RC] %u", flip_arrow2);
+        pass ("DIMENSION_ANG3PT.flip_arrow2 [B] " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ANG3PT.flip_arrow2 [RC] %u != %u", dimension_ang3pt->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ANG3PT.flip_arrow2 [B] " FORMAT_B " != " FORMAT_B "", dimension_ang3pt->flip_arrow2, flip_arrow2); error++;
       }
     flip_arrow2++;
     if (dwg_dynapi_entity_set_value(dimension_ang3pt, "DIMENSION_ANG3PT", "flip_arrow2", &flip_arrow2) &&
         flip_arrow2 == dimension_ang3pt->flip_arrow2)
       {
-        pass ("DIMENSION_ANG3PT.flip_arrow2 [RC] set+1 %u", flip_arrow2);
+        pass ("DIMENSION_ANG3PT.flip_arrow2 [B] set+1 " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ANG3PT.flip_arrow2 [RC] set+1 %u != %u", dimension_ang3pt->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ANG3PT.flip_arrow2 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ang3pt->flip_arrow2, flip_arrow2); error++;
       }
     dimension_ang3pt->flip_arrow2--;
 
@@ -10638,25 +10638,25 @@ static int test_DIMENSION_ANG3PT (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(dimension_ang3pt, "DIMENSION_ANG3PT", "unknown", &unknown, NULL) &&
         unknown == dimension_ang3pt->unknown)
       {
-        pass ("DIMENSION_ANG3PT.unknown [RC] %u", unknown);
+        pass ("DIMENSION_ANG3PT.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ANG3PT.unknown [RC] %u != %u", dimension_ang3pt->unknown, unknown); error++;
+        fail ("DIMENSION_ANG3PT.unknown [B] " FORMAT_B " != " FORMAT_B "", dimension_ang3pt->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(dimension_ang3pt, "DIMENSION_ANG3PT", "unknown", &unknown) &&
         unknown == dimension_ang3pt->unknown)
       {
-        pass ("DIMENSION_ANG3PT.unknown [RC] set+1 %u", unknown);
+        pass ("DIMENSION_ANG3PT.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ANG3PT.unknown [RC] set+1 %u != %u", dimension_ang3pt->unknown, unknown); error++;
+        fail ("DIMENSION_ANG3PT.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ang3pt->unknown, unknown); error++;
       }
     dimension_ang3pt->unknown--;
 
@@ -10909,49 +10909,49 @@ static int test_DIMENSION_DIAMETER (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC flip_arrow1;
+    BITCODE_B flip_arrow1;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "flip_arrow1", &flip_arrow1, NULL) &&
         flip_arrow1 == dimension_diameter->flip_arrow1)
       {
-        pass ("DIMENSION_DIAMETER.flip_arrow1 [RC] %u", flip_arrow1);
+        pass ("DIMENSION_DIAMETER.flip_arrow1 [B] " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_DIAMETER.flip_arrow1 [RC] %u != %u", dimension_diameter->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_DIAMETER.flip_arrow1 [B] " FORMAT_B " != " FORMAT_B "", dimension_diameter->flip_arrow1, flip_arrow1); error++;
       }
     flip_arrow1++;
     if (dwg_dynapi_entity_set_value(dimension_diameter, "DIMENSION_DIAMETER", "flip_arrow1", &flip_arrow1) &&
         flip_arrow1 == dimension_diameter->flip_arrow1)
       {
-        pass ("DIMENSION_DIAMETER.flip_arrow1 [RC] set+1 %u", flip_arrow1);
+        pass ("DIMENSION_DIAMETER.flip_arrow1 [B] set+1 " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_DIAMETER.flip_arrow1 [RC] set+1 %u != %u", dimension_diameter->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_DIAMETER.flip_arrow1 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_diameter->flip_arrow1, flip_arrow1); error++;
       }
     dimension_diameter->flip_arrow1--;
 
   }
   {
-    BITCODE_RC flip_arrow2;
+    BITCODE_B flip_arrow2;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "flip_arrow2", &flip_arrow2, NULL) &&
         flip_arrow2 == dimension_diameter->flip_arrow2)
       {
-        pass ("DIMENSION_DIAMETER.flip_arrow2 [RC] %u", flip_arrow2);
+        pass ("DIMENSION_DIAMETER.flip_arrow2 [B] " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_DIAMETER.flip_arrow2 [RC] %u != %u", dimension_diameter->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_DIAMETER.flip_arrow2 [B] " FORMAT_B " != " FORMAT_B "", dimension_diameter->flip_arrow2, flip_arrow2); error++;
       }
     flip_arrow2++;
     if (dwg_dynapi_entity_set_value(dimension_diameter, "DIMENSION_DIAMETER", "flip_arrow2", &flip_arrow2) &&
         flip_arrow2 == dimension_diameter->flip_arrow2)
       {
-        pass ("DIMENSION_DIAMETER.flip_arrow2 [RC] set+1 %u", flip_arrow2);
+        pass ("DIMENSION_DIAMETER.flip_arrow2 [B] set+1 " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_DIAMETER.flip_arrow2 [RC] set+1 %u != %u", dimension_diameter->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_DIAMETER.flip_arrow2 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_diameter->flip_arrow2, flip_arrow2); error++;
       }
     dimension_diameter->flip_arrow2--;
 
@@ -11137,25 +11137,25 @@ static int test_DIMENSION_DIAMETER (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(dimension_diameter, "DIMENSION_DIAMETER", "unknown", &unknown, NULL) &&
         unknown == dimension_diameter->unknown)
       {
-        pass ("DIMENSION_DIAMETER.unknown [RC] %u", unknown);
+        pass ("DIMENSION_DIAMETER.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_DIAMETER.unknown [RC] %u != %u", dimension_diameter->unknown, unknown); error++;
+        fail ("DIMENSION_DIAMETER.unknown [B] " FORMAT_B " != " FORMAT_B "", dimension_diameter->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(dimension_diameter, "DIMENSION_DIAMETER", "unknown", &unknown) &&
         unknown == dimension_diameter->unknown)
       {
-        pass ("DIMENSION_DIAMETER.unknown [RC] set+1 %u", unknown);
+        pass ("DIMENSION_DIAMETER.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_DIAMETER.unknown [RC] set+1 %u != %u", dimension_diameter->unknown, unknown); error++;
+        fail ("DIMENSION_DIAMETER.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_diameter->unknown, unknown); error++;
       }
     dimension_diameter->unknown--;
 
@@ -11468,49 +11468,49 @@ static int test_DIMENSION_LINEAR (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC flip_arrow1;
+    BITCODE_B flip_arrow1;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "flip_arrow1", &flip_arrow1, NULL) &&
         flip_arrow1 == dimension_linear->flip_arrow1)
       {
-        pass ("DIMENSION_LINEAR.flip_arrow1 [RC] %u", flip_arrow1);
+        pass ("DIMENSION_LINEAR.flip_arrow1 [B] " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_LINEAR.flip_arrow1 [RC] %u != %u", dimension_linear->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_LINEAR.flip_arrow1 [B] " FORMAT_B " != " FORMAT_B "", dimension_linear->flip_arrow1, flip_arrow1); error++;
       }
     flip_arrow1++;
     if (dwg_dynapi_entity_set_value(dimension_linear, "DIMENSION_LINEAR", "flip_arrow1", &flip_arrow1) &&
         flip_arrow1 == dimension_linear->flip_arrow1)
       {
-        pass ("DIMENSION_LINEAR.flip_arrow1 [RC] set+1 %u", flip_arrow1);
+        pass ("DIMENSION_LINEAR.flip_arrow1 [B] set+1 " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_LINEAR.flip_arrow1 [RC] set+1 %u != %u", dimension_linear->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_LINEAR.flip_arrow1 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_linear->flip_arrow1, flip_arrow1); error++;
       }
     dimension_linear->flip_arrow1--;
 
   }
   {
-    BITCODE_RC flip_arrow2;
+    BITCODE_B flip_arrow2;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "flip_arrow2", &flip_arrow2, NULL) &&
         flip_arrow2 == dimension_linear->flip_arrow2)
       {
-        pass ("DIMENSION_LINEAR.flip_arrow2 [RC] %u", flip_arrow2);
+        pass ("DIMENSION_LINEAR.flip_arrow2 [B] " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_LINEAR.flip_arrow2 [RC] %u != %u", dimension_linear->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_LINEAR.flip_arrow2 [B] " FORMAT_B " != " FORMAT_B "", dimension_linear->flip_arrow2, flip_arrow2); error++;
       }
     flip_arrow2++;
     if (dwg_dynapi_entity_set_value(dimension_linear, "DIMENSION_LINEAR", "flip_arrow2", &flip_arrow2) &&
         flip_arrow2 == dimension_linear->flip_arrow2)
       {
-        pass ("DIMENSION_LINEAR.flip_arrow2 [RC] set+1 %u", flip_arrow2);
+        pass ("DIMENSION_LINEAR.flip_arrow2 [B] set+1 " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_LINEAR.flip_arrow2 [RC] set+1 %u != %u", dimension_linear->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_LINEAR.flip_arrow2 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_linear->flip_arrow2, flip_arrow2); error++;
       }
     dimension_linear->flip_arrow2--;
 
@@ -11672,25 +11672,25 @@ static int test_DIMENSION_LINEAR (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(dimension_linear, "DIMENSION_LINEAR", "unknown", &unknown, NULL) &&
         unknown == dimension_linear->unknown)
       {
-        pass ("DIMENSION_LINEAR.unknown [RC] %u", unknown);
+        pass ("DIMENSION_LINEAR.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_LINEAR.unknown [RC] %u != %u", dimension_linear->unknown, unknown); error++;
+        fail ("DIMENSION_LINEAR.unknown [B] " FORMAT_B " != " FORMAT_B "", dimension_linear->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(dimension_linear, "DIMENSION_LINEAR", "unknown", &unknown) &&
         unknown == dimension_linear->unknown)
       {
-        pass ("DIMENSION_LINEAR.unknown [RC] set+1 %u", unknown);
+        pass ("DIMENSION_LINEAR.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_LINEAR.unknown [RC] set+1 %u != %u", dimension_linear->unknown, unknown); error++;
+        fail ("DIMENSION_LINEAR.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_linear->unknown, unknown); error++;
       }
     dimension_linear->unknown--;
 
@@ -11967,49 +11967,49 @@ static int test_DIMENSION_ORDINATE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC flip_arrow1;
+    BITCODE_B flip_arrow1;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "flip_arrow1", &flip_arrow1, NULL) &&
         flip_arrow1 == dimension_ordinate->flip_arrow1)
       {
-        pass ("DIMENSION_ORDINATE.flip_arrow1 [RC] %u", flip_arrow1);
+        pass ("DIMENSION_ORDINATE.flip_arrow1 [B] " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ORDINATE.flip_arrow1 [RC] %u != %u", dimension_ordinate->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ORDINATE.flip_arrow1 [B] " FORMAT_B " != " FORMAT_B "", dimension_ordinate->flip_arrow1, flip_arrow1); error++;
       }
     flip_arrow1++;
     if (dwg_dynapi_entity_set_value(dimension_ordinate, "DIMENSION_ORDINATE", "flip_arrow1", &flip_arrow1) &&
         flip_arrow1 == dimension_ordinate->flip_arrow1)
       {
-        pass ("DIMENSION_ORDINATE.flip_arrow1 [RC] set+1 %u", flip_arrow1);
+        pass ("DIMENSION_ORDINATE.flip_arrow1 [B] set+1 " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_ORDINATE.flip_arrow1 [RC] set+1 %u != %u", dimension_ordinate->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_ORDINATE.flip_arrow1 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ordinate->flip_arrow1, flip_arrow1); error++;
       }
     dimension_ordinate->flip_arrow1--;
 
   }
   {
-    BITCODE_RC flip_arrow2;
+    BITCODE_B flip_arrow2;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "flip_arrow2", &flip_arrow2, NULL) &&
         flip_arrow2 == dimension_ordinate->flip_arrow2)
       {
-        pass ("DIMENSION_ORDINATE.flip_arrow2 [RC] %u", flip_arrow2);
+        pass ("DIMENSION_ORDINATE.flip_arrow2 [B] " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ORDINATE.flip_arrow2 [RC] %u != %u", dimension_ordinate->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ORDINATE.flip_arrow2 [B] " FORMAT_B " != " FORMAT_B "", dimension_ordinate->flip_arrow2, flip_arrow2); error++;
       }
     flip_arrow2++;
     if (dwg_dynapi_entity_set_value(dimension_ordinate, "DIMENSION_ORDINATE", "flip_arrow2", &flip_arrow2) &&
         flip_arrow2 == dimension_ordinate->flip_arrow2)
       {
-        pass ("DIMENSION_ORDINATE.flip_arrow2 [RC] set+1 %u", flip_arrow2);
+        pass ("DIMENSION_ORDINATE.flip_arrow2 [B] set+1 " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_ORDINATE.flip_arrow2 [RC] set+1 %u != %u", dimension_ordinate->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_ORDINATE.flip_arrow2 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ordinate->flip_arrow2, flip_arrow2); error++;
       }
     dimension_ordinate->flip_arrow2--;
 
@@ -12183,25 +12183,25 @@ static int test_DIMENSION_ORDINATE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(dimension_ordinate, "DIMENSION_ORDINATE", "unknown", &unknown, NULL) &&
         unknown == dimension_ordinate->unknown)
       {
-        pass ("DIMENSION_ORDINATE.unknown [RC] %u", unknown);
+        pass ("DIMENSION_ORDINATE.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ORDINATE.unknown [RC] %u != %u", dimension_ordinate->unknown, unknown); error++;
+        fail ("DIMENSION_ORDINATE.unknown [B] " FORMAT_B " != " FORMAT_B "", dimension_ordinate->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(dimension_ordinate, "DIMENSION_ORDINATE", "unknown", &unknown) &&
         unknown == dimension_ordinate->unknown)
       {
-        pass ("DIMENSION_ORDINATE.unknown [RC] set+1 %u", unknown);
+        pass ("DIMENSION_ORDINATE.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_ORDINATE.unknown [RC] set+1 %u != %u", dimension_ordinate->unknown, unknown); error++;
+        fail ("DIMENSION_ORDINATE.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_ordinate->unknown, unknown); error++;
       }
     dimension_ordinate->unknown--;
 
@@ -12454,49 +12454,49 @@ static int test_DIMENSION_RADIUS (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC flip_arrow1;
+    BITCODE_B flip_arrow1;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "flip_arrow1", &flip_arrow1, NULL) &&
         flip_arrow1 == dimension_radius->flip_arrow1)
       {
-        pass ("DIMENSION_RADIUS.flip_arrow1 [RC] %u", flip_arrow1);
+        pass ("DIMENSION_RADIUS.flip_arrow1 [B] " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_RADIUS.flip_arrow1 [RC] %u != %u", dimension_radius->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_RADIUS.flip_arrow1 [B] " FORMAT_B " != " FORMAT_B "", dimension_radius->flip_arrow1, flip_arrow1); error++;
       }
     flip_arrow1++;
     if (dwg_dynapi_entity_set_value(dimension_radius, "DIMENSION_RADIUS", "flip_arrow1", &flip_arrow1) &&
         flip_arrow1 == dimension_radius->flip_arrow1)
       {
-        pass ("DIMENSION_RADIUS.flip_arrow1 [RC] set+1 %u", flip_arrow1);
+        pass ("DIMENSION_RADIUS.flip_arrow1 [B] set+1 " FORMAT_B "", flip_arrow1);
       }
     else
       {
-        fail ("DIMENSION_RADIUS.flip_arrow1 [RC] set+1 %u != %u", dimension_radius->flip_arrow1, flip_arrow1); error++;
+        fail ("DIMENSION_RADIUS.flip_arrow1 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_radius->flip_arrow1, flip_arrow1); error++;
       }
     dimension_radius->flip_arrow1--;
 
   }
   {
-    BITCODE_RC flip_arrow2;
+    BITCODE_B flip_arrow2;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "flip_arrow2", &flip_arrow2, NULL) &&
         flip_arrow2 == dimension_radius->flip_arrow2)
       {
-        pass ("DIMENSION_RADIUS.flip_arrow2 [RC] %u", flip_arrow2);
+        pass ("DIMENSION_RADIUS.flip_arrow2 [B] " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_RADIUS.flip_arrow2 [RC] %u != %u", dimension_radius->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_RADIUS.flip_arrow2 [B] " FORMAT_B " != " FORMAT_B "", dimension_radius->flip_arrow2, flip_arrow2); error++;
       }
     flip_arrow2++;
     if (dwg_dynapi_entity_set_value(dimension_radius, "DIMENSION_RADIUS", "flip_arrow2", &flip_arrow2) &&
         flip_arrow2 == dimension_radius->flip_arrow2)
       {
-        pass ("DIMENSION_RADIUS.flip_arrow2 [RC] set+1 %u", flip_arrow2);
+        pass ("DIMENSION_RADIUS.flip_arrow2 [B] set+1 " FORMAT_B "", flip_arrow2);
       }
     else
       {
-        fail ("DIMENSION_RADIUS.flip_arrow2 [RC] set+1 %u != %u", dimension_radius->flip_arrow2, flip_arrow2); error++;
+        fail ("DIMENSION_RADIUS.flip_arrow2 [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_radius->flip_arrow2, flip_arrow2); error++;
       }
     dimension_radius->flip_arrow2--;
 
@@ -12682,25 +12682,25 @@ static int test_DIMENSION_RADIUS (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(dimension_radius, "DIMENSION_RADIUS", "unknown", &unknown, NULL) &&
         unknown == dimension_radius->unknown)
       {
-        pass ("DIMENSION_RADIUS.unknown [RC] %u", unknown);
+        pass ("DIMENSION_RADIUS.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_RADIUS.unknown [RC] %u != %u", dimension_radius->unknown, unknown); error++;
+        fail ("DIMENSION_RADIUS.unknown [B] " FORMAT_B " != " FORMAT_B "", dimension_radius->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(dimension_radius, "DIMENSION_RADIUS", "unknown", &unknown) &&
         unknown == dimension_radius->unknown)
       {
-        pass ("DIMENSION_RADIUS.unknown [RC] set+1 %u", unknown);
+        pass ("DIMENSION_RADIUS.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("DIMENSION_RADIUS.unknown [RC] set+1 %u != %u", dimension_radius->unknown, unknown); error++;
+        fail ("DIMENSION_RADIUS.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", dimension_radius->unknown, unknown); error++;
       }
     dimension_radius->unknown--;
 
@@ -12883,73 +12883,73 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC acis_empty;
+    BITCODE_B acis_empty;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "acis_empty", &acis_empty, NULL) &&
         acis_empty == extrudedsurface->acis_empty)
       {
-        pass ("EXTRUDEDSURFACE.acis_empty [RC] %u", acis_empty);
+        pass ("EXTRUDEDSURFACE.acis_empty [B] " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.acis_empty [RC] %u != %u", extrudedsurface->acis_empty, acis_empty); error++;
+        fail ("EXTRUDEDSURFACE.acis_empty [B] " FORMAT_B " != " FORMAT_B "", extrudedsurface->acis_empty, acis_empty); error++;
       }
     acis_empty++;
     if (dwg_dynapi_entity_set_value(extrudedsurface, "EXTRUDEDSURFACE", "acis_empty", &acis_empty) &&
         acis_empty == extrudedsurface->acis_empty)
       {
-        pass ("EXTRUDEDSURFACE.acis_empty [RC] set+1 %u", acis_empty);
+        pass ("EXTRUDEDSURFACE.acis_empty [B] set+1 " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.acis_empty [RC] set+1 %u != %u", extrudedsurface->acis_empty, acis_empty); error++;
+        fail ("EXTRUDEDSURFACE.acis_empty [B] set+1 " FORMAT_B " != " FORMAT_B "", extrudedsurface->acis_empty, acis_empty); error++;
       }
     extrudedsurface->acis_empty--;
 
   }
   {
-    BITCODE_RC acis_empty2;
+    BITCODE_B acis_empty2;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "acis_empty2", &acis_empty2, NULL) &&
         acis_empty2 == extrudedsurface->acis_empty2)
       {
-        pass ("EXTRUDEDSURFACE.acis_empty2 [RC] %u", acis_empty2);
+        pass ("EXTRUDEDSURFACE.acis_empty2 [B] " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.acis_empty2 [RC] %u != %u", extrudedsurface->acis_empty2, acis_empty2); error++;
+        fail ("EXTRUDEDSURFACE.acis_empty2 [B] " FORMAT_B " != " FORMAT_B "", extrudedsurface->acis_empty2, acis_empty2); error++;
       }
     acis_empty2++;
     if (dwg_dynapi_entity_set_value(extrudedsurface, "EXTRUDEDSURFACE", "acis_empty2", &acis_empty2) &&
         acis_empty2 == extrudedsurface->acis_empty2)
       {
-        pass ("EXTRUDEDSURFACE.acis_empty2 [RC] set+1 %u", acis_empty2);
+        pass ("EXTRUDEDSURFACE.acis_empty2 [B] set+1 " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.acis_empty2 [RC] set+1 %u != %u", extrudedsurface->acis_empty2, acis_empty2); error++;
+        fail ("EXTRUDEDSURFACE.acis_empty2 [B] set+1 " FORMAT_B " != " FORMAT_B "", extrudedsurface->acis_empty2, acis_empty2); error++;
       }
     extrudedsurface->acis_empty2--;
 
   }
   {
-    BITCODE_RC acis_empty_bit;
+    BITCODE_B acis_empty_bit;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "acis_empty_bit", &acis_empty_bit, NULL) &&
         acis_empty_bit == extrudedsurface->acis_empty_bit)
       {
-        pass ("EXTRUDEDSURFACE.acis_empty_bit [RC] %u", acis_empty_bit);
+        pass ("EXTRUDEDSURFACE.acis_empty_bit [B] " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.acis_empty_bit [RC] %u != %u", extrudedsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("EXTRUDEDSURFACE.acis_empty_bit [B] " FORMAT_B " != " FORMAT_B "", extrudedsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     acis_empty_bit++;
     if (dwg_dynapi_entity_set_value(extrudedsurface, "EXTRUDEDSURFACE", "acis_empty_bit", &acis_empty_bit) &&
         acis_empty_bit == extrudedsurface->acis_empty_bit)
       {
-        pass ("EXTRUDEDSURFACE.acis_empty_bit [RC] set+1 %u", acis_empty_bit);
+        pass ("EXTRUDEDSURFACE.acis_empty_bit [B] set+1 " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.acis_empty_bit [RC] set+1 %u != %u", extrudedsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("EXTRUDEDSURFACE.acis_empty_bit [B] set+1 " FORMAT_B " != " FORMAT_B "", extrudedsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     extrudedsurface->acis_empty_bit--;
 
@@ -13231,25 +13231,25 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC isoline_present;
+    BITCODE_B isoline_present;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "isoline_present", &isoline_present, NULL) &&
         isoline_present == extrudedsurface->isoline_present)
       {
-        pass ("EXTRUDEDSURFACE.isoline_present [RC] %u", isoline_present);
+        pass ("EXTRUDEDSURFACE.isoline_present [B] " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.isoline_present [RC] %u != %u", extrudedsurface->isoline_present, isoline_present); error++;
+        fail ("EXTRUDEDSURFACE.isoline_present [B] " FORMAT_B " != " FORMAT_B "", extrudedsurface->isoline_present, isoline_present); error++;
       }
     isoline_present++;
     if (dwg_dynapi_entity_set_value(extrudedsurface, "EXTRUDEDSURFACE", "isoline_present", &isoline_present) &&
         isoline_present == extrudedsurface->isoline_present)
       {
-        pass ("EXTRUDEDSURFACE.isoline_present [RC] set+1 %u", isoline_present);
+        pass ("EXTRUDEDSURFACE.isoline_present [B] set+1 " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.isoline_present [RC] set+1 %u != %u", extrudedsurface->isoline_present, isoline_present); error++;
+        fail ("EXTRUDEDSURFACE.isoline_present [B] set+1 " FORMAT_B " != " FORMAT_B "", extrudedsurface->isoline_present, isoline_present); error++;
       }
     extrudedsurface->isoline_present--;
 
@@ -13447,25 +13447,25 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC point_present;
+    BITCODE_B point_present;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "point_present", &point_present, NULL) &&
         point_present == extrudedsurface->point_present)
       {
-        pass ("EXTRUDEDSURFACE.point_present [RC] %u", point_present);
+        pass ("EXTRUDEDSURFACE.point_present [B] " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.point_present [RC] %u != %u", extrudedsurface->point_present, point_present); error++;
+        fail ("EXTRUDEDSURFACE.point_present [B] " FORMAT_B " != " FORMAT_B "", extrudedsurface->point_present, point_present); error++;
       }
     point_present++;
     if (dwg_dynapi_entity_set_value(extrudedsurface, "EXTRUDEDSURFACE", "point_present", &point_present) &&
         point_present == extrudedsurface->point_present)
       {
-        pass ("EXTRUDEDSURFACE.point_present [RC] set+1 %u", point_present);
+        pass ("EXTRUDEDSURFACE.point_present [B] set+1 " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.point_present [RC] set+1 %u != %u", extrudedsurface->point_present, point_present); error++;
+        fail ("EXTRUDEDSURFACE.point_present [B] set+1 " FORMAT_B " != " FORMAT_B "", extrudedsurface->point_present, point_present); error++;
       }
     extrudedsurface->point_present--;
 
@@ -13713,25 +13713,25 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "unknown", &unknown, NULL) &&
         unknown == extrudedsurface->unknown)
       {
-        pass ("EXTRUDEDSURFACE.unknown [RC] %u", unknown);
+        pass ("EXTRUDEDSURFACE.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.unknown [RC] %u != %u", extrudedsurface->unknown, unknown); error++;
+        fail ("EXTRUDEDSURFACE.unknown [B] " FORMAT_B " != " FORMAT_B "", extrudedsurface->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(extrudedsurface, "EXTRUDEDSURFACE", "unknown", &unknown) &&
         unknown == extrudedsurface->unknown)
       {
-        pass ("EXTRUDEDSURFACE.unknown [RC] set+1 %u", unknown);
+        pass ("EXTRUDEDSURFACE.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.unknown [RC] set+1 %u != %u", extrudedsurface->unknown, unknown); error++;
+        fail ("EXTRUDEDSURFACE.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", extrudedsurface->unknown, unknown); error++;
       }
     extrudedsurface->unknown--;
 
@@ -13809,25 +13809,25 @@ static int test_EXTRUDEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC wireframe_data_present;
+    BITCODE_B wireframe_data_present;
     if (dwg_dynapi_entity_value(extrudedsurface, "EXTRUDEDSURFACE", "wireframe_data_present", &wireframe_data_present, NULL) &&
         wireframe_data_present == extrudedsurface->wireframe_data_present)
       {
-        pass ("EXTRUDEDSURFACE.wireframe_data_present [RC] %u", wireframe_data_present);
+        pass ("EXTRUDEDSURFACE.wireframe_data_present [B] " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.wireframe_data_present [RC] %u != %u", extrudedsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("EXTRUDEDSURFACE.wireframe_data_present [B] " FORMAT_B " != " FORMAT_B "", extrudedsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     wireframe_data_present++;
     if (dwg_dynapi_entity_set_value(extrudedsurface, "EXTRUDEDSURFACE", "wireframe_data_present", &wireframe_data_present) &&
         wireframe_data_present == extrudedsurface->wireframe_data_present)
       {
-        pass ("EXTRUDEDSURFACE.wireframe_data_present [RC] set+1 %u", wireframe_data_present);
+        pass ("EXTRUDEDSURFACE.wireframe_data_present [B] set+1 " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("EXTRUDEDSURFACE.wireframe_data_present [RC] set+1 %u != %u", extrudedsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("EXTRUDEDSURFACE.wireframe_data_present [B] set+1 " FORMAT_B " != " FORMAT_B "", extrudedsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     extrudedsurface->wireframe_data_present--;
 
@@ -14625,15 +14625,17 @@ static int test_HATCH (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_2RD seeds;
-    if (dwg_dynapi_entity_value(hatch, "HATCH", "seeds", &seeds, NULL)
-        && !memcmp(&seeds, &hatch->seeds, sizeof(hatch->seeds)))
+    BITCODE_2RD* seeds;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(hatch, "HATCH", "num_seeds", &count, NULL) &&
+        dwg_dynapi_entity_value(hatch, "HATCH", "seeds", &seeds, NULL)
+        && seeds == hatch->seeds)
       {
-        pass ("HATCH.seeds [2RD]");
+        pass ("HATCH.seeds [2RD*] * %u num_seeds", count);
       }
     else
       {
-        fail ("HATCH.seeds [2RD]"); error++;
+        fail ("HATCH.seeds [2RD*] * %u num_seeds", count); error++;
       }
   }
   {
@@ -17001,73 +17003,73 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC acis_empty;
+    BITCODE_B acis_empty;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "acis_empty", &acis_empty, NULL) &&
         acis_empty == loftedsurface->acis_empty)
       {
-        pass ("LOFTEDSURFACE.acis_empty [RC] %u", acis_empty);
+        pass ("LOFTEDSURFACE.acis_empty [B] " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("LOFTEDSURFACE.acis_empty [RC] %u != %u", loftedsurface->acis_empty, acis_empty); error++;
+        fail ("LOFTEDSURFACE.acis_empty [B] " FORMAT_B " != " FORMAT_B "", loftedsurface->acis_empty, acis_empty); error++;
       }
     acis_empty++;
     if (dwg_dynapi_entity_set_value(loftedsurface, "LOFTEDSURFACE", "acis_empty", &acis_empty) &&
         acis_empty == loftedsurface->acis_empty)
       {
-        pass ("LOFTEDSURFACE.acis_empty [RC] set+1 %u", acis_empty);
+        pass ("LOFTEDSURFACE.acis_empty [B] set+1 " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("LOFTEDSURFACE.acis_empty [RC] set+1 %u != %u", loftedsurface->acis_empty, acis_empty); error++;
+        fail ("LOFTEDSURFACE.acis_empty [B] set+1 " FORMAT_B " != " FORMAT_B "", loftedsurface->acis_empty, acis_empty); error++;
       }
     loftedsurface->acis_empty--;
 
   }
   {
-    BITCODE_RC acis_empty2;
+    BITCODE_B acis_empty2;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "acis_empty2", &acis_empty2, NULL) &&
         acis_empty2 == loftedsurface->acis_empty2)
       {
-        pass ("LOFTEDSURFACE.acis_empty2 [RC] %u", acis_empty2);
+        pass ("LOFTEDSURFACE.acis_empty2 [B] " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("LOFTEDSURFACE.acis_empty2 [RC] %u != %u", loftedsurface->acis_empty2, acis_empty2); error++;
+        fail ("LOFTEDSURFACE.acis_empty2 [B] " FORMAT_B " != " FORMAT_B "", loftedsurface->acis_empty2, acis_empty2); error++;
       }
     acis_empty2++;
     if (dwg_dynapi_entity_set_value(loftedsurface, "LOFTEDSURFACE", "acis_empty2", &acis_empty2) &&
         acis_empty2 == loftedsurface->acis_empty2)
       {
-        pass ("LOFTEDSURFACE.acis_empty2 [RC] set+1 %u", acis_empty2);
+        pass ("LOFTEDSURFACE.acis_empty2 [B] set+1 " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("LOFTEDSURFACE.acis_empty2 [RC] set+1 %u != %u", loftedsurface->acis_empty2, acis_empty2); error++;
+        fail ("LOFTEDSURFACE.acis_empty2 [B] set+1 " FORMAT_B " != " FORMAT_B "", loftedsurface->acis_empty2, acis_empty2); error++;
       }
     loftedsurface->acis_empty2--;
 
   }
   {
-    BITCODE_RC acis_empty_bit;
+    BITCODE_B acis_empty_bit;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "acis_empty_bit", &acis_empty_bit, NULL) &&
         acis_empty_bit == loftedsurface->acis_empty_bit)
       {
-        pass ("LOFTEDSURFACE.acis_empty_bit [RC] %u", acis_empty_bit);
+        pass ("LOFTEDSURFACE.acis_empty_bit [B] " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("LOFTEDSURFACE.acis_empty_bit [RC] %u != %u", loftedsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("LOFTEDSURFACE.acis_empty_bit [B] " FORMAT_B " != " FORMAT_B "", loftedsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     acis_empty_bit++;
     if (dwg_dynapi_entity_set_value(loftedsurface, "LOFTEDSURFACE", "acis_empty_bit", &acis_empty_bit) &&
         acis_empty_bit == loftedsurface->acis_empty_bit)
       {
-        pass ("LOFTEDSURFACE.acis_empty_bit [RC] set+1 %u", acis_empty_bit);
+        pass ("LOFTEDSURFACE.acis_empty_bit [B] set+1 " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("LOFTEDSURFACE.acis_empty_bit [RC] set+1 %u != %u", loftedsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("LOFTEDSURFACE.acis_empty_bit [B] set+1 " FORMAT_B " != " FORMAT_B "", loftedsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     loftedsurface->acis_empty_bit--;
 
@@ -17157,15 +17159,17 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_H cross_sections;
-    if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "cross_sections", &cross_sections, NULL)
-        && !memcmp(&cross_sections, &loftedsurface->cross_sections, sizeof(loftedsurface->cross_sections)))
+    BITCODE_H* cross_sections;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "num_cross_sections", &count, NULL) &&
+        dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "cross_sections", &cross_sections, NULL)
+        && cross_sections == loftedsurface->cross_sections)
       {
-        pass ("LOFTEDSURFACE.cross_sections [H]");
+        pass ("LOFTEDSURFACE.cross_sections [H*] * %u num_cross_sections", count);
       }
     else
       {
-        fail ("LOFTEDSURFACE.cross_sections [H]"); error++;
+        fail ("LOFTEDSURFACE.cross_sections [H*] * %u num_cross_sections", count); error++;
       }
   }
   {
@@ -17241,15 +17245,17 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_H guide_curves;
-    if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "guide_curves", &guide_curves, NULL)
-        && !memcmp(&guide_curves, &loftedsurface->guide_curves, sizeof(loftedsurface->guide_curves)))
+    BITCODE_H* guide_curves;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "num_guide_curves", &count, NULL) &&
+        dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "guide_curves", &guide_curves, NULL)
+        && guide_curves == loftedsurface->guide_curves)
       {
-        pass ("LOFTEDSURFACE.guide_curves [H]");
+        pass ("LOFTEDSURFACE.guide_curves [H*] * %u num_guide_curves", count);
       }
     else
       {
-        fail ("LOFTEDSURFACE.guide_curves [H]"); error++;
+        fail ("LOFTEDSURFACE.guide_curves [H*] * %u num_guide_curves", count); error++;
       }
   }
   {
@@ -17265,25 +17271,25 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC isoline_present;
+    BITCODE_B isoline_present;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "isoline_present", &isoline_present, NULL) &&
         isoline_present == loftedsurface->isoline_present)
       {
-        pass ("LOFTEDSURFACE.isoline_present [RC] %u", isoline_present);
+        pass ("LOFTEDSURFACE.isoline_present [B] " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("LOFTEDSURFACE.isoline_present [RC] %u != %u", loftedsurface->isoline_present, isoline_present); error++;
+        fail ("LOFTEDSURFACE.isoline_present [B] " FORMAT_B " != " FORMAT_B "", loftedsurface->isoline_present, isoline_present); error++;
       }
     isoline_present++;
     if (dwg_dynapi_entity_set_value(loftedsurface, "LOFTEDSURFACE", "isoline_present", &isoline_present) &&
         isoline_present == loftedsurface->isoline_present)
       {
-        pass ("LOFTEDSURFACE.isoline_present [RC] set+1 %u", isoline_present);
+        pass ("LOFTEDSURFACE.isoline_present [B] set+1 " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("LOFTEDSURFACE.isoline_present [RC] set+1 %u != %u", loftedsurface->isoline_present, isoline_present); error++;
+        fail ("LOFTEDSURFACE.isoline_present [B] set+1 " FORMAT_B " != " FORMAT_B "", loftedsurface->isoline_present, isoline_present); error++;
       }
     loftedsurface->isoline_present--;
 
@@ -17553,25 +17559,25 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC point_present;
+    BITCODE_B point_present;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "point_present", &point_present, NULL) &&
         point_present == loftedsurface->point_present)
       {
-        pass ("LOFTEDSURFACE.point_present [RC] %u", point_present);
+        pass ("LOFTEDSURFACE.point_present [B] " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("LOFTEDSURFACE.point_present [RC] %u != %u", loftedsurface->point_present, point_present); error++;
+        fail ("LOFTEDSURFACE.point_present [B] " FORMAT_B " != " FORMAT_B "", loftedsurface->point_present, point_present); error++;
       }
     point_present++;
     if (dwg_dynapi_entity_set_value(loftedsurface, "LOFTEDSURFACE", "point_present", &point_present) &&
         point_present == loftedsurface->point_present)
       {
-        pass ("LOFTEDSURFACE.point_present [RC] set+1 %u", point_present);
+        pass ("LOFTEDSURFACE.point_present [B] set+1 " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("LOFTEDSURFACE.point_present [RC] set+1 %u != %u", loftedsurface->point_present, point_present); error++;
+        fail ("LOFTEDSURFACE.point_present [B] set+1 " FORMAT_B " != " FORMAT_B "", loftedsurface->point_present, point_present); error++;
       }
     loftedsurface->point_present--;
 
@@ -17735,25 +17741,25 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "unknown", &unknown, NULL) &&
         unknown == loftedsurface->unknown)
       {
-        pass ("LOFTEDSURFACE.unknown [RC] %u", unknown);
+        pass ("LOFTEDSURFACE.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("LOFTEDSURFACE.unknown [RC] %u != %u", loftedsurface->unknown, unknown); error++;
+        fail ("LOFTEDSURFACE.unknown [B] " FORMAT_B " != " FORMAT_B "", loftedsurface->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(loftedsurface, "LOFTEDSURFACE", "unknown", &unknown) &&
         unknown == loftedsurface->unknown)
       {
-        pass ("LOFTEDSURFACE.unknown [RC] set+1 %u", unknown);
+        pass ("LOFTEDSURFACE.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("LOFTEDSURFACE.unknown [RC] set+1 %u != %u", loftedsurface->unknown, unknown); error++;
+        fail ("LOFTEDSURFACE.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", loftedsurface->unknown, unknown); error++;
       }
     loftedsurface->unknown--;
 
@@ -17855,25 +17861,25 @@ static int test_LOFTEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC wireframe_data_present;
+    BITCODE_B wireframe_data_present;
     if (dwg_dynapi_entity_value(loftedsurface, "LOFTEDSURFACE", "wireframe_data_present", &wireframe_data_present, NULL) &&
         wireframe_data_present == loftedsurface->wireframe_data_present)
       {
-        pass ("LOFTEDSURFACE.wireframe_data_present [RC] %u", wireframe_data_present);
+        pass ("LOFTEDSURFACE.wireframe_data_present [B] " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("LOFTEDSURFACE.wireframe_data_present [RC] %u != %u", loftedsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("LOFTEDSURFACE.wireframe_data_present [B] " FORMAT_B " != " FORMAT_B "", loftedsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     wireframe_data_present++;
     if (dwg_dynapi_entity_set_value(loftedsurface, "LOFTEDSURFACE", "wireframe_data_present", &wireframe_data_present) &&
         wireframe_data_present == loftedsurface->wireframe_data_present)
       {
-        pass ("LOFTEDSURFACE.wireframe_data_present [RC] set+1 %u", wireframe_data_present);
+        pass ("LOFTEDSURFACE.wireframe_data_present [B] set+1 " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("LOFTEDSURFACE.wireframe_data_present [RC] set+1 %u != %u", loftedsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("LOFTEDSURFACE.wireframe_data_present [B] set+1 " FORMAT_B " != " FORMAT_B "", loftedsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     loftedsurface->wireframe_data_present--;
 
@@ -20379,73 +20385,73 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC acis_empty;
+    BITCODE_B acis_empty;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "acis_empty", &acis_empty, NULL) &&
         acis_empty == planesurface->acis_empty)
       {
-        pass ("PLANESURFACE.acis_empty [RC] %u", acis_empty);
+        pass ("PLANESURFACE.acis_empty [B] " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("PLANESURFACE.acis_empty [RC] %u != %u", planesurface->acis_empty, acis_empty); error++;
+        fail ("PLANESURFACE.acis_empty [B] " FORMAT_B " != " FORMAT_B "", planesurface->acis_empty, acis_empty); error++;
       }
     acis_empty++;
     if (dwg_dynapi_entity_set_value(planesurface, "PLANESURFACE", "acis_empty", &acis_empty) &&
         acis_empty == planesurface->acis_empty)
       {
-        pass ("PLANESURFACE.acis_empty [RC] set+1 %u", acis_empty);
+        pass ("PLANESURFACE.acis_empty [B] set+1 " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("PLANESURFACE.acis_empty [RC] set+1 %u != %u", planesurface->acis_empty, acis_empty); error++;
+        fail ("PLANESURFACE.acis_empty [B] set+1 " FORMAT_B " != " FORMAT_B "", planesurface->acis_empty, acis_empty); error++;
       }
     planesurface->acis_empty--;
 
   }
   {
-    BITCODE_RC acis_empty2;
+    BITCODE_B acis_empty2;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "acis_empty2", &acis_empty2, NULL) &&
         acis_empty2 == planesurface->acis_empty2)
       {
-        pass ("PLANESURFACE.acis_empty2 [RC] %u", acis_empty2);
+        pass ("PLANESURFACE.acis_empty2 [B] " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("PLANESURFACE.acis_empty2 [RC] %u != %u", planesurface->acis_empty2, acis_empty2); error++;
+        fail ("PLANESURFACE.acis_empty2 [B] " FORMAT_B " != " FORMAT_B "", planesurface->acis_empty2, acis_empty2); error++;
       }
     acis_empty2++;
     if (dwg_dynapi_entity_set_value(planesurface, "PLANESURFACE", "acis_empty2", &acis_empty2) &&
         acis_empty2 == planesurface->acis_empty2)
       {
-        pass ("PLANESURFACE.acis_empty2 [RC] set+1 %u", acis_empty2);
+        pass ("PLANESURFACE.acis_empty2 [B] set+1 " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("PLANESURFACE.acis_empty2 [RC] set+1 %u != %u", planesurface->acis_empty2, acis_empty2); error++;
+        fail ("PLANESURFACE.acis_empty2 [B] set+1 " FORMAT_B " != " FORMAT_B "", planesurface->acis_empty2, acis_empty2); error++;
       }
     planesurface->acis_empty2--;
 
   }
   {
-    BITCODE_RC acis_empty_bit;
+    BITCODE_B acis_empty_bit;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "acis_empty_bit", &acis_empty_bit, NULL) &&
         acis_empty_bit == planesurface->acis_empty_bit)
       {
-        pass ("PLANESURFACE.acis_empty_bit [RC] %u", acis_empty_bit);
+        pass ("PLANESURFACE.acis_empty_bit [B] " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("PLANESURFACE.acis_empty_bit [RC] %u != %u", planesurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("PLANESURFACE.acis_empty_bit [B] " FORMAT_B " != " FORMAT_B "", planesurface->acis_empty_bit, acis_empty_bit); error++;
       }
     acis_empty_bit++;
     if (dwg_dynapi_entity_set_value(planesurface, "PLANESURFACE", "acis_empty_bit", &acis_empty_bit) &&
         acis_empty_bit == planesurface->acis_empty_bit)
       {
-        pass ("PLANESURFACE.acis_empty_bit [RC] set+1 %u", acis_empty_bit);
+        pass ("PLANESURFACE.acis_empty_bit [B] set+1 " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("PLANESURFACE.acis_empty_bit [RC] set+1 %u != %u", planesurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("PLANESURFACE.acis_empty_bit [B] set+1 " FORMAT_B " != " FORMAT_B "", planesurface->acis_empty_bit, acis_empty_bit); error++;
       }
     planesurface->acis_empty_bit--;
 
@@ -20523,25 +20529,25 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC isoline_present;
+    BITCODE_B isoline_present;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "isoline_present", &isoline_present, NULL) &&
         isoline_present == planesurface->isoline_present)
       {
-        pass ("PLANESURFACE.isoline_present [RC] %u", isoline_present);
+        pass ("PLANESURFACE.isoline_present [B] " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("PLANESURFACE.isoline_present [RC] %u != %u", planesurface->isoline_present, isoline_present); error++;
+        fail ("PLANESURFACE.isoline_present [B] " FORMAT_B " != " FORMAT_B "", planesurface->isoline_present, isoline_present); error++;
       }
     isoline_present++;
     if (dwg_dynapi_entity_set_value(planesurface, "PLANESURFACE", "isoline_present", &isoline_present) &&
         isoline_present == planesurface->isoline_present)
       {
-        pass ("PLANESURFACE.isoline_present [RC] set+1 %u", isoline_present);
+        pass ("PLANESURFACE.isoline_present [B] set+1 " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("PLANESURFACE.isoline_present [RC] set+1 %u != %u", planesurface->isoline_present, isoline_present); error++;
+        fail ("PLANESURFACE.isoline_present [B] set+1 " FORMAT_B " != " FORMAT_B "", planesurface->isoline_present, isoline_present); error++;
       }
     planesurface->isoline_present--;
 
@@ -20691,25 +20697,25 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC point_present;
+    BITCODE_B point_present;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "point_present", &point_present, NULL) &&
         point_present == planesurface->point_present)
       {
-        pass ("PLANESURFACE.point_present [RC] %u", point_present);
+        pass ("PLANESURFACE.point_present [B] " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("PLANESURFACE.point_present [RC] %u != %u", planesurface->point_present, point_present); error++;
+        fail ("PLANESURFACE.point_present [B] " FORMAT_B " != " FORMAT_B "", planesurface->point_present, point_present); error++;
       }
     point_present++;
     if (dwg_dynapi_entity_set_value(planesurface, "PLANESURFACE", "point_present", &point_present) &&
         point_present == planesurface->point_present)
       {
-        pass ("PLANESURFACE.point_present [RC] set+1 %u", point_present);
+        pass ("PLANESURFACE.point_present [B] set+1 " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("PLANESURFACE.point_present [RC] set+1 %u != %u", planesurface->point_present, point_present); error++;
+        fail ("PLANESURFACE.point_present [B] set+1 " FORMAT_B " != " FORMAT_B "", planesurface->point_present, point_present); error++;
       }
     planesurface->point_present--;
 
@@ -20753,25 +20759,25 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "unknown", &unknown, NULL) &&
         unknown == planesurface->unknown)
       {
-        pass ("PLANESURFACE.unknown [RC] %u", unknown);
+        pass ("PLANESURFACE.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("PLANESURFACE.unknown [RC] %u != %u", planesurface->unknown, unknown); error++;
+        fail ("PLANESURFACE.unknown [B] " FORMAT_B " != " FORMAT_B "", planesurface->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(planesurface, "PLANESURFACE", "unknown", &unknown) &&
         unknown == planesurface->unknown)
       {
-        pass ("PLANESURFACE.unknown [RC] set+1 %u", unknown);
+        pass ("PLANESURFACE.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("PLANESURFACE.unknown [RC] set+1 %u != %u", planesurface->unknown, unknown); error++;
+        fail ("PLANESURFACE.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", planesurface->unknown, unknown); error++;
       }
     planesurface->unknown--;
 
@@ -20849,25 +20855,25 @@ static int test_PLANESURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC wireframe_data_present;
+    BITCODE_B wireframe_data_present;
     if (dwg_dynapi_entity_value(planesurface, "PLANESURFACE", "wireframe_data_present", &wireframe_data_present, NULL) &&
         wireframe_data_present == planesurface->wireframe_data_present)
       {
-        pass ("PLANESURFACE.wireframe_data_present [RC] %u", wireframe_data_present);
+        pass ("PLANESURFACE.wireframe_data_present [B] " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("PLANESURFACE.wireframe_data_present [RC] %u != %u", planesurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("PLANESURFACE.wireframe_data_present [B] " FORMAT_B " != " FORMAT_B "", planesurface->wireframe_data_present, wireframe_data_present); error++;
       }
     wireframe_data_present++;
     if (dwg_dynapi_entity_set_value(planesurface, "PLANESURFACE", "wireframe_data_present", &wireframe_data_present) &&
         wireframe_data_present == planesurface->wireframe_data_present)
       {
-        pass ("PLANESURFACE.wireframe_data_present [RC] set+1 %u", wireframe_data_present);
+        pass ("PLANESURFACE.wireframe_data_present [B] set+1 " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("PLANESURFACE.wireframe_data_present [RC] set+1 %u != %u", planesurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("PLANESURFACE.wireframe_data_present [B] set+1 " FORMAT_B " != " FORMAT_B "", planesurface->wireframe_data_present, wireframe_data_present); error++;
       }
     planesurface->wireframe_data_present--;
 
@@ -22040,73 +22046,73 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC acis_empty;
+    BITCODE_B acis_empty;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "acis_empty", &acis_empty, NULL) &&
         acis_empty == revolvedsurface->acis_empty)
       {
-        pass ("REVOLVEDSURFACE.acis_empty [RC] %u", acis_empty);
+        pass ("REVOLVEDSURFACE.acis_empty [B] " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.acis_empty [RC] %u != %u", revolvedsurface->acis_empty, acis_empty); error++;
+        fail ("REVOLVEDSURFACE.acis_empty [B] " FORMAT_B " != " FORMAT_B "", revolvedsurface->acis_empty, acis_empty); error++;
       }
     acis_empty++;
     if (dwg_dynapi_entity_set_value(revolvedsurface, "REVOLVEDSURFACE", "acis_empty", &acis_empty) &&
         acis_empty == revolvedsurface->acis_empty)
       {
-        pass ("REVOLVEDSURFACE.acis_empty [RC] set+1 %u", acis_empty);
+        pass ("REVOLVEDSURFACE.acis_empty [B] set+1 " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.acis_empty [RC] set+1 %u != %u", revolvedsurface->acis_empty, acis_empty); error++;
+        fail ("REVOLVEDSURFACE.acis_empty [B] set+1 " FORMAT_B " != " FORMAT_B "", revolvedsurface->acis_empty, acis_empty); error++;
       }
     revolvedsurface->acis_empty--;
 
   }
   {
-    BITCODE_RC acis_empty2;
+    BITCODE_B acis_empty2;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "acis_empty2", &acis_empty2, NULL) &&
         acis_empty2 == revolvedsurface->acis_empty2)
       {
-        pass ("REVOLVEDSURFACE.acis_empty2 [RC] %u", acis_empty2);
+        pass ("REVOLVEDSURFACE.acis_empty2 [B] " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.acis_empty2 [RC] %u != %u", revolvedsurface->acis_empty2, acis_empty2); error++;
+        fail ("REVOLVEDSURFACE.acis_empty2 [B] " FORMAT_B " != " FORMAT_B "", revolvedsurface->acis_empty2, acis_empty2); error++;
       }
     acis_empty2++;
     if (dwg_dynapi_entity_set_value(revolvedsurface, "REVOLVEDSURFACE", "acis_empty2", &acis_empty2) &&
         acis_empty2 == revolvedsurface->acis_empty2)
       {
-        pass ("REVOLVEDSURFACE.acis_empty2 [RC] set+1 %u", acis_empty2);
+        pass ("REVOLVEDSURFACE.acis_empty2 [B] set+1 " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.acis_empty2 [RC] set+1 %u != %u", revolvedsurface->acis_empty2, acis_empty2); error++;
+        fail ("REVOLVEDSURFACE.acis_empty2 [B] set+1 " FORMAT_B " != " FORMAT_B "", revolvedsurface->acis_empty2, acis_empty2); error++;
       }
     revolvedsurface->acis_empty2--;
 
   }
   {
-    BITCODE_RC acis_empty_bit;
+    BITCODE_B acis_empty_bit;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "acis_empty_bit", &acis_empty_bit, NULL) &&
         acis_empty_bit == revolvedsurface->acis_empty_bit)
       {
-        pass ("REVOLVEDSURFACE.acis_empty_bit [RC] %u", acis_empty_bit);
+        pass ("REVOLVEDSURFACE.acis_empty_bit [B] " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.acis_empty_bit [RC] %u != %u", revolvedsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("REVOLVEDSURFACE.acis_empty_bit [B] " FORMAT_B " != " FORMAT_B "", revolvedsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     acis_empty_bit++;
     if (dwg_dynapi_entity_set_value(revolvedsurface, "REVOLVEDSURFACE", "acis_empty_bit", &acis_empty_bit) &&
         acis_empty_bit == revolvedsurface->acis_empty_bit)
       {
-        pass ("REVOLVEDSURFACE.acis_empty_bit [RC] set+1 %u", acis_empty_bit);
+        pass ("REVOLVEDSURFACE.acis_empty_bit [B] set+1 " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.acis_empty_bit [RC] set+1 %u != %u", revolvedsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("REVOLVEDSURFACE.acis_empty_bit [B] set+1 " FORMAT_B " != " FORMAT_B "", revolvedsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     revolvedsurface->acis_empty_bit--;
 
@@ -22328,25 +22334,25 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC isoline_present;
+    BITCODE_B isoline_present;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "isoline_present", &isoline_present, NULL) &&
         isoline_present == revolvedsurface->isoline_present)
       {
-        pass ("REVOLVEDSURFACE.isoline_present [RC] %u", isoline_present);
+        pass ("REVOLVEDSURFACE.isoline_present [B] " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.isoline_present [RC] %u != %u", revolvedsurface->isoline_present, isoline_present); error++;
+        fail ("REVOLVEDSURFACE.isoline_present [B] " FORMAT_B " != " FORMAT_B "", revolvedsurface->isoline_present, isoline_present); error++;
       }
     isoline_present++;
     if (dwg_dynapi_entity_set_value(revolvedsurface, "REVOLVEDSURFACE", "isoline_present", &isoline_present) &&
         isoline_present == revolvedsurface->isoline_present)
       {
-        pass ("REVOLVEDSURFACE.isoline_present [RC] set+1 %u", isoline_present);
+        pass ("REVOLVEDSURFACE.isoline_present [B] set+1 " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.isoline_present [RC] set+1 %u != %u", revolvedsurface->isoline_present, isoline_present); error++;
+        fail ("REVOLVEDSURFACE.isoline_present [B] set+1 " FORMAT_B " != " FORMAT_B "", revolvedsurface->isoline_present, isoline_present); error++;
       }
     revolvedsurface->isoline_present--;
 
@@ -22496,25 +22502,25 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC point_present;
+    BITCODE_B point_present;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "point_present", &point_present, NULL) &&
         point_present == revolvedsurface->point_present)
       {
-        pass ("REVOLVEDSURFACE.point_present [RC] %u", point_present);
+        pass ("REVOLVEDSURFACE.point_present [B] " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.point_present [RC] %u != %u", revolvedsurface->point_present, point_present); error++;
+        fail ("REVOLVEDSURFACE.point_present [B] " FORMAT_B " != " FORMAT_B "", revolvedsurface->point_present, point_present); error++;
       }
     point_present++;
     if (dwg_dynapi_entity_set_value(revolvedsurface, "REVOLVEDSURFACE", "point_present", &point_present) &&
         point_present == revolvedsurface->point_present)
       {
-        pass ("REVOLVEDSURFACE.point_present [RC] set+1 %u", point_present);
+        pass ("REVOLVEDSURFACE.point_present [B] set+1 " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.point_present [RC] set+1 %u != %u", revolvedsurface->point_present, point_present); error++;
+        fail ("REVOLVEDSURFACE.point_present [B] set+1 " FORMAT_B " != " FORMAT_B "", revolvedsurface->point_present, point_present); error++;
       }
     revolvedsurface->point_present--;
 
@@ -22666,25 +22672,25 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "unknown", &unknown, NULL) &&
         unknown == revolvedsurface->unknown)
       {
-        pass ("REVOLVEDSURFACE.unknown [RC] %u", unknown);
+        pass ("REVOLVEDSURFACE.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.unknown [RC] %u != %u", revolvedsurface->unknown, unknown); error++;
+        fail ("REVOLVEDSURFACE.unknown [B] " FORMAT_B " != " FORMAT_B "", revolvedsurface->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(revolvedsurface, "REVOLVEDSURFACE", "unknown", &unknown) &&
         unknown == revolvedsurface->unknown)
       {
-        pass ("REVOLVEDSURFACE.unknown [RC] set+1 %u", unknown);
+        pass ("REVOLVEDSURFACE.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.unknown [RC] set+1 %u != %u", revolvedsurface->unknown, unknown); error++;
+        fail ("REVOLVEDSURFACE.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", revolvedsurface->unknown, unknown); error++;
       }
     revolvedsurface->unknown--;
 
@@ -22762,25 +22768,25 @@ static int test_REVOLVEDSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC wireframe_data_present;
+    BITCODE_B wireframe_data_present;
     if (dwg_dynapi_entity_value(revolvedsurface, "REVOLVEDSURFACE", "wireframe_data_present", &wireframe_data_present, NULL) &&
         wireframe_data_present == revolvedsurface->wireframe_data_present)
       {
-        pass ("REVOLVEDSURFACE.wireframe_data_present [RC] %u", wireframe_data_present);
+        pass ("REVOLVEDSURFACE.wireframe_data_present [B] " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.wireframe_data_present [RC] %u != %u", revolvedsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("REVOLVEDSURFACE.wireframe_data_present [B] " FORMAT_B " != " FORMAT_B "", revolvedsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     wireframe_data_present++;
     if (dwg_dynapi_entity_set_value(revolvedsurface, "REVOLVEDSURFACE", "wireframe_data_present", &wireframe_data_present) &&
         wireframe_data_present == revolvedsurface->wireframe_data_present)
       {
-        pass ("REVOLVEDSURFACE.wireframe_data_present [RC] set+1 %u", wireframe_data_present);
+        pass ("REVOLVEDSURFACE.wireframe_data_present [B] set+1 " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("REVOLVEDSURFACE.wireframe_data_present [RC] set+1 %u != %u", revolvedsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("REVOLVEDSURFACE.wireframe_data_present [B] set+1 " FORMAT_B " != " FORMAT_B "", revolvedsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     revolvedsurface->wireframe_data_present--;
 
@@ -23608,73 +23614,73 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC acis_empty;
+    BITCODE_B acis_empty;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "acis_empty", &acis_empty, NULL) &&
         acis_empty == sweptsurface->acis_empty)
       {
-        pass ("SWEPTSURFACE.acis_empty [RC] %u", acis_empty);
+        pass ("SWEPTSURFACE.acis_empty [B] " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("SWEPTSURFACE.acis_empty [RC] %u != %u", sweptsurface->acis_empty, acis_empty); error++;
+        fail ("SWEPTSURFACE.acis_empty [B] " FORMAT_B " != " FORMAT_B "", sweptsurface->acis_empty, acis_empty); error++;
       }
     acis_empty++;
     if (dwg_dynapi_entity_set_value(sweptsurface, "SWEPTSURFACE", "acis_empty", &acis_empty) &&
         acis_empty == sweptsurface->acis_empty)
       {
-        pass ("SWEPTSURFACE.acis_empty [RC] set+1 %u", acis_empty);
+        pass ("SWEPTSURFACE.acis_empty [B] set+1 " FORMAT_B "", acis_empty);
       }
     else
       {
-        fail ("SWEPTSURFACE.acis_empty [RC] set+1 %u != %u", sweptsurface->acis_empty, acis_empty); error++;
+        fail ("SWEPTSURFACE.acis_empty [B] set+1 " FORMAT_B " != " FORMAT_B "", sweptsurface->acis_empty, acis_empty); error++;
       }
     sweptsurface->acis_empty--;
 
   }
   {
-    BITCODE_RC acis_empty2;
+    BITCODE_B acis_empty2;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "acis_empty2", &acis_empty2, NULL) &&
         acis_empty2 == sweptsurface->acis_empty2)
       {
-        pass ("SWEPTSURFACE.acis_empty2 [RC] %u", acis_empty2);
+        pass ("SWEPTSURFACE.acis_empty2 [B] " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("SWEPTSURFACE.acis_empty2 [RC] %u != %u", sweptsurface->acis_empty2, acis_empty2); error++;
+        fail ("SWEPTSURFACE.acis_empty2 [B] " FORMAT_B " != " FORMAT_B "", sweptsurface->acis_empty2, acis_empty2); error++;
       }
     acis_empty2++;
     if (dwg_dynapi_entity_set_value(sweptsurface, "SWEPTSURFACE", "acis_empty2", &acis_empty2) &&
         acis_empty2 == sweptsurface->acis_empty2)
       {
-        pass ("SWEPTSURFACE.acis_empty2 [RC] set+1 %u", acis_empty2);
+        pass ("SWEPTSURFACE.acis_empty2 [B] set+1 " FORMAT_B "", acis_empty2);
       }
     else
       {
-        fail ("SWEPTSURFACE.acis_empty2 [RC] set+1 %u != %u", sweptsurface->acis_empty2, acis_empty2); error++;
+        fail ("SWEPTSURFACE.acis_empty2 [B] set+1 " FORMAT_B " != " FORMAT_B "", sweptsurface->acis_empty2, acis_empty2); error++;
       }
     sweptsurface->acis_empty2--;
 
   }
   {
-    BITCODE_RC acis_empty_bit;
+    BITCODE_B acis_empty_bit;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "acis_empty_bit", &acis_empty_bit, NULL) &&
         acis_empty_bit == sweptsurface->acis_empty_bit)
       {
-        pass ("SWEPTSURFACE.acis_empty_bit [RC] %u", acis_empty_bit);
+        pass ("SWEPTSURFACE.acis_empty_bit [B] " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("SWEPTSURFACE.acis_empty_bit [RC] %u != %u", sweptsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("SWEPTSURFACE.acis_empty_bit [B] " FORMAT_B " != " FORMAT_B "", sweptsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     acis_empty_bit++;
     if (dwg_dynapi_entity_set_value(sweptsurface, "SWEPTSURFACE", "acis_empty_bit", &acis_empty_bit) &&
         acis_empty_bit == sweptsurface->acis_empty_bit)
       {
-        pass ("SWEPTSURFACE.acis_empty_bit [RC] set+1 %u", acis_empty_bit);
+        pass ("SWEPTSURFACE.acis_empty_bit [B] set+1 " FORMAT_B "", acis_empty_bit);
       }
     else
       {
-        fail ("SWEPTSURFACE.acis_empty_bit [RC] set+1 %u != %u", sweptsurface->acis_empty_bit, acis_empty_bit); error++;
+        fail ("SWEPTSURFACE.acis_empty_bit [B] set+1 " FORMAT_B " != " FORMAT_B "", sweptsurface->acis_empty_bit, acis_empty_bit); error++;
       }
     sweptsurface->acis_empty_bit--;
 
@@ -23920,25 +23926,25 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC isoline_present;
+    BITCODE_B isoline_present;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "isoline_present", &isoline_present, NULL) &&
         isoline_present == sweptsurface->isoline_present)
       {
-        pass ("SWEPTSURFACE.isoline_present [RC] %u", isoline_present);
+        pass ("SWEPTSURFACE.isoline_present [B] " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("SWEPTSURFACE.isoline_present [RC] %u != %u", sweptsurface->isoline_present, isoline_present); error++;
+        fail ("SWEPTSURFACE.isoline_present [B] " FORMAT_B " != " FORMAT_B "", sweptsurface->isoline_present, isoline_present); error++;
       }
     isoline_present++;
     if (dwg_dynapi_entity_set_value(sweptsurface, "SWEPTSURFACE", "isoline_present", &isoline_present) &&
         isoline_present == sweptsurface->isoline_present)
       {
-        pass ("SWEPTSURFACE.isoline_present [RC] set+1 %u", isoline_present);
+        pass ("SWEPTSURFACE.isoline_present [B] set+1 " FORMAT_B "", isoline_present);
       }
     else
       {
-        fail ("SWEPTSURFACE.isoline_present [RC] set+1 %u != %u", sweptsurface->isoline_present, isoline_present); error++;
+        fail ("SWEPTSURFACE.isoline_present [B] set+1 " FORMAT_B " != " FORMAT_B "", sweptsurface->isoline_present, isoline_present); error++;
       }
     sweptsurface->isoline_present--;
 
@@ -24172,25 +24178,25 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
       }
   }
   {
-    BITCODE_RC point_present;
+    BITCODE_B point_present;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "point_present", &point_present, NULL) &&
         point_present == sweptsurface->point_present)
       {
-        pass ("SWEPTSURFACE.point_present [RC] %u", point_present);
+        pass ("SWEPTSURFACE.point_present [B] " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("SWEPTSURFACE.point_present [RC] %u != %u", sweptsurface->point_present, point_present); error++;
+        fail ("SWEPTSURFACE.point_present [B] " FORMAT_B " != " FORMAT_B "", sweptsurface->point_present, point_present); error++;
       }
     point_present++;
     if (dwg_dynapi_entity_set_value(sweptsurface, "SWEPTSURFACE", "point_present", &point_present) &&
         point_present == sweptsurface->point_present)
       {
-        pass ("SWEPTSURFACE.point_present [RC] set+1 %u", point_present);
+        pass ("SWEPTSURFACE.point_present [B] set+1 " FORMAT_B "", point_present);
       }
     else
       {
-        fail ("SWEPTSURFACE.point_present [RC] set+1 %u != %u", sweptsurface->point_present, point_present); error++;
+        fail ("SWEPTSURFACE.point_present [B] set+1 " FORMAT_B " != " FORMAT_B "", sweptsurface->point_present, point_present); error++;
       }
     sweptsurface->point_present--;
 
@@ -24474,25 +24480,25 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC unknown;
+    BITCODE_B unknown;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "unknown", &unknown, NULL) &&
         unknown == sweptsurface->unknown)
       {
-        pass ("SWEPTSURFACE.unknown [RC] %u", unknown);
+        pass ("SWEPTSURFACE.unknown [B] " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("SWEPTSURFACE.unknown [RC] %u != %u", sweptsurface->unknown, unknown); error++;
+        fail ("SWEPTSURFACE.unknown [B] " FORMAT_B " != " FORMAT_B "", sweptsurface->unknown, unknown); error++;
       }
     unknown++;
     if (dwg_dynapi_entity_set_value(sweptsurface, "SWEPTSURFACE", "unknown", &unknown) &&
         unknown == sweptsurface->unknown)
       {
-        pass ("SWEPTSURFACE.unknown [RC] set+1 %u", unknown);
+        pass ("SWEPTSURFACE.unknown [B] set+1 " FORMAT_B "", unknown);
       }
     else
       {
-        fail ("SWEPTSURFACE.unknown [RC] set+1 %u != %u", sweptsurface->unknown, unknown); error++;
+        fail ("SWEPTSURFACE.unknown [B] set+1 " FORMAT_B " != " FORMAT_B "", sweptsurface->unknown, unknown); error++;
       }
     sweptsurface->unknown--;
 
@@ -24570,25 +24576,25 @@ static int test_SWEPTSURFACE (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_RC wireframe_data_present;
+    BITCODE_B wireframe_data_present;
     if (dwg_dynapi_entity_value(sweptsurface, "SWEPTSURFACE", "wireframe_data_present", &wireframe_data_present, NULL) &&
         wireframe_data_present == sweptsurface->wireframe_data_present)
       {
-        pass ("SWEPTSURFACE.wireframe_data_present [RC] %u", wireframe_data_present);
+        pass ("SWEPTSURFACE.wireframe_data_present [B] " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("SWEPTSURFACE.wireframe_data_present [RC] %u != %u", sweptsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("SWEPTSURFACE.wireframe_data_present [B] " FORMAT_B " != " FORMAT_B "", sweptsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     wireframe_data_present++;
     if (dwg_dynapi_entity_set_value(sweptsurface, "SWEPTSURFACE", "wireframe_data_present", &wireframe_data_present) &&
         wireframe_data_present == sweptsurface->wireframe_data_present)
       {
-        pass ("SWEPTSURFACE.wireframe_data_present [RC] set+1 %u", wireframe_data_present);
+        pass ("SWEPTSURFACE.wireframe_data_present [B] set+1 " FORMAT_B "", wireframe_data_present);
       }
     else
       {
-        fail ("SWEPTSURFACE.wireframe_data_present [RC] set+1 %u != %u", sweptsurface->wireframe_data_present, wireframe_data_present); error++;
+        fail ("SWEPTSURFACE.wireframe_data_present [B] set+1 " FORMAT_B " != " FORMAT_B "", sweptsurface->wireframe_data_present, wireframe_data_present); error++;
       }
     sweptsurface->wireframe_data_present--;
 
@@ -27726,15 +27732,17 @@ static int test_UNDERLAY (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_2RD clip_verts;
-    if (dwg_dynapi_entity_value(underlay, "UNDERLAY", "clip_verts", &clip_verts, NULL)
-        && !memcmp(&clip_verts, &underlay->clip_verts, sizeof(underlay->clip_verts)))
+    BITCODE_2RD* clip_verts;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(underlay, "UNDERLAY", "num_clip_verts", &count, NULL) &&
+        dwg_dynapi_entity_value(underlay, "UNDERLAY", "clip_verts", &clip_verts, NULL)
+        && clip_verts == underlay->clip_verts)
       {
-        pass ("UNDERLAY.clip_verts [2RD]");
+        pass ("UNDERLAY.clip_verts [2RD*] * %u num_clip_verts", count);
       }
     else
       {
-        fail ("UNDERLAY.clip_verts [2RD]"); error++;
+        fail ("UNDERLAY.clip_verts [2RD*] * %u num_clip_verts", count); error++;
       }
   }
   {
@@ -37403,15 +37411,17 @@ static int test_EVALUATION_GRAPH (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_H evalexpr;
-    if (dwg_dynapi_entity_value(evaluation_graph, "EVALUATION_GRAPH", "evalexpr", &evalexpr, NULL)
-        && !memcmp(&evalexpr, &evaluation_graph->evalexpr, sizeof(evaluation_graph->evalexpr)))
+    BITCODE_H* evalexpr;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(evaluation_graph, "EVALUATION_GRAPH", "num_evalexpr", &count, NULL) &&
+        dwg_dynapi_entity_value(evaluation_graph, "EVALUATION_GRAPH", "evalexpr", &evalexpr, NULL)
+        && evalexpr == evaluation_graph->evalexpr)
       {
-        pass ("EVALUATION_GRAPH.evalexpr [H]");
+        pass ("EVALUATION_GRAPH.evalexpr [H*] * %u num_evalexpr", count);
       }
     else
       {
-        fail ("EVALUATION_GRAPH.evalexpr [H]"); error++;
+        fail ("EVALUATION_GRAPH.evalexpr [H*] * %u num_evalexpr", count); error++;
       }
   }
   {
@@ -37662,15 +37672,17 @@ static int test_FIELD (const Dwg_Object *obj)
   const Dwg_Object_Object *restrict obj_obj = obj->tio.object;
   Dwg_Object_FIELD *restrict field = obj->tio.object->tio.FIELD;
   {
-    BITCODE_H childs;
-    if (dwg_dynapi_entity_value(field, "FIELD", "childs", &childs, NULL)
-        && !memcmp(&childs, &field->childs, sizeof(field->childs)))
+    BITCODE_H* childs;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(field, "FIELD", "num_childs", &count, NULL) &&
+        dwg_dynapi_entity_value(field, "FIELD", "childs", &childs, NULL)
+        && childs == field->childs)
       {
-        pass ("FIELD.childs [H]");
+        pass ("FIELD.childs [H*] * %u num_childs", count);
       }
     else
       {
-        fail ("FIELD.childs [H]"); error++;
+        fail ("FIELD.childs [H*] * %u num_childs", count); error++;
       }
   }
   {
@@ -37928,15 +37940,17 @@ static int test_FIELD (const Dwg_Object *obj)
 
   }
   {
-    BITCODE_H objects;
-    if (dwg_dynapi_entity_value(field, "FIELD", "objects", &objects, NULL)
-        && !memcmp(&objects, &field->objects, sizeof(field->objects)))
+    BITCODE_H* objects;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(field, "FIELD", "num_objects", &count, NULL) &&
+        dwg_dynapi_entity_value(field, "FIELD", "objects", &objects, NULL)
+        && objects == field->objects)
       {
-        pass ("FIELD.objects [H]");
+        pass ("FIELD.objects [H*] * %u num_objects", count);
       }
     else
       {
-        fail ("FIELD.objects [H]"); error++;
+        fail ("FIELD.objects [H*] * %u num_objects", count); error++;
       }
   }
   {
@@ -38007,15 +38021,17 @@ static int test_FIELDLIST (const Dwg_Object *obj)
   const Dwg_Object_Object *restrict obj_obj = obj->tio.object;
   Dwg_Object_FIELDLIST *restrict fieldlist = obj->tio.object->tio.FIELDLIST;
   {
-    BITCODE_H field_handles;
-    if (dwg_dynapi_entity_value(fieldlist, "FIELDLIST", "field_handles", &field_handles, NULL)
-        && !memcmp(&field_handles, &fieldlist->field_handles, sizeof(fieldlist->field_handles)))
+    BITCODE_H* field_handles;
+    BITCODE_BL count = 0;
+    if (dwg_dynapi_entity_value(fieldlist, "FIELDLIST", "num_fields", &count, NULL) &&
+        dwg_dynapi_entity_value(fieldlist, "FIELDLIST", "field_handles", &field_handles, NULL)
+        && field_handles == fieldlist->field_handles)
       {
-        pass ("FIELDLIST.field_handles [H]");
+        pass ("FIELDLIST.field_handles [H*] * %u num_fields", count);
       }
     else
       {
-        fail ("FIELDLIST.field_handles [H]"); error++;
+        fail ("FIELDLIST.field_handles [H*] * %u num_fields", count); error++;
       }
   }
   {
