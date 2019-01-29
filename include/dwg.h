@@ -26,10 +26,10 @@
 /* for uint64_t, but not in swig */
 #ifndef SWIGIMPORTED
 /* with autotools you get better int types, esp. on 64bit */
-# ifdef HAVE_STDINT_H
+# if defined(HAVE_STDINT_H) || defined(__CYGWIN__)
 #  include <stdint.h>
 # endif
-# ifdef HAVE_INTTYPES_H
+# if defined(HAVE_INTTYPES_H) || defined(__CYGWIN__)
 #  include <inttypes.h>
 # endif
 /* wchar for R2007+ support.
@@ -82,7 +82,7 @@ extern "C" {
 /* Since R24 */
 #define BITCODE_3B unsigned char
 #define FORMAT_3B "%u"
-#ifdef HAVE_STDINT_H
+# if defined(HAVE_STDINT_H) || defined(__CYGWIN__)
 # define BITCODE_BS uint16_t
 # define BITCODE_RS uint16_t
 # define BITCODE_BL uint32_t
@@ -90,12 +90,22 @@ extern "C" {
 # define BITCODE_BLd int32_t
 # define BITCODE_RLd int32_t
 #else
+/* e.g. old cygwin 64 vs 32 */
+# if defined(__WORDSIZE) && __WORDSIZE == 64
 # define BITCODE_BS unsigned short int
 # define BITCODE_RS unsigned short int
 # define BITCODE_BL unsigned int
 # define BITCODE_RL unsigned int
 # define BITCODE_BLd int
 # define BITCODE_RLd int
+# else
+# define BITCODE_BS unsigned short int
+# define BITCODE_RS unsigned short int
+# define BITCODE_BL unsigned long int
+# define BITCODE_RL unsigned long int
+# define BITCODE_BLd long int
+# define BITCODE_RLd long int
+# endif
 #endif
 #ifdef HAVE_INTTYPES_H
 # define FORMAT_BS "%" PRIu16
